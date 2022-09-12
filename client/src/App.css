@@ -1,0 +1,14 @@
+*{
+    margin: 0; 
+}
+.nav{
+    background-color: black;
+    height: 50px;
+    width: 100%;
+}
+
+.nav .tag{
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 400;
+}
