@@ -11,14 +11,14 @@ function NavBar() {
         <IconButton>
           <PersonIcon fontSize='large' className='icons'></PersonIcon>
         </IconButton>
-        
+
         <a class="navbar-brand font-style" href="#">
-            SocioLyf
+          SocioLyf
         </a>
         <IconButton>
           <ForumIcon fontSize='large'></ForumIcon>
         </IconButton>
-        
+
       </nav>
     </div>
   )

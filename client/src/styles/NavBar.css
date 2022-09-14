@@ -4,7 +4,9 @@
 }
 
 .font-style {
-    font-family: 'Orbitron', sans-serif;
+  font-family: 'Pacifico', cursive;
+/*     font-family: 'Lobster Two', cursive; */
+/*     font-family: 'Orbitron', sans-serif; */
     font-size: xx-large;
     padding: 5px;
 }
