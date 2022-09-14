@@ -3,12 +3,16 @@ import Navbar from './components/NavBar';
 import Scroll from './components/Scroll';
 import { useState, useEffect } from 'react';
 import { getTest } from './functions/test';
+import Login from './components/Login';
+import Signup from './components/Signup';
 
 function App() {
   return (
     <div className="App">
-      <Navbar></Navbar>
-      <Scroll></Scroll>
+      {/* <Navbar/> */}
+      {/* <Login/> */}
+      <Signup/>
+      {/* <Scroll/> */}
     </div>
   );
 }

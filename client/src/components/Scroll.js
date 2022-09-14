@@ -11,8 +11,6 @@ const style = {
 function Scroll(){
   const [items, setItems] = useState(Array.from({length:20}))
 
- 
-
   let fetchMoreData = () => {
     // a fake async api call like which sends
     // 20 more records in 1.5 secs

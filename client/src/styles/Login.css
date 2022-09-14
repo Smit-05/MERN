@@ -1,0 +1,20 @@
+.vh100 {
+  height: 100vh;
+}
+
+.font-style {
+  font-family: "Pacifico", cursive;
+  /*     font-family: 'Lobster Two', cursive; */
+  /*     font-family: 'Orbitron', sans-serif; */
+  font-size: 50px;
+  padding: 5px;
+
+}
+
+.width30{
+    width: 30%;
+}
+
+.btn-color{
+    border-color:#6610f2 !important ;
+}

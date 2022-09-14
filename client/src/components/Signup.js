@@ -1,6 +1,7 @@
 import React from 'react'
-import '../styles/Login.css'
-function Login() {
+import '../styles/Signup.css'
+
+function Signup() {
     return (
         <div class='container d-flex flex-column align-items-center justify-content-center vh100'>
             <h1 class='font-style mb-4'>SocioLyf</h1>
@@ -25,4 +26,9 @@ function Login() {
     )
 }
 
-export default Login
+export default Signup
+
+/*
+Full Name
+
+*/
