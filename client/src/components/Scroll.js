@@ -1,5 +1,4 @@
-import React from "react";
-import { render } from "react-dom";
+import React, {useState} from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
 
 const style = {
@@ -10,28 +9,31 @@ const style = {
 };
 
 function Scroll(){
-  const state = {
-    items: Array.from({ length: 20 })
-  };
-  const fetchMoreData = () => {
+  const [items, setItems] = useState(Array.from({length:20}))
+
+ 
+
+  let fetchMoreData = () => {
     // a fake async api call like which sends
     // 20 more records in 1.5 secs
     setTimeout(() => {
-      this.setState({
-        items: this.state.items.concat(Array.from({ length: 20 }))
-      });
+      var x = items.concat(Array.from({length:20}));
+      setItems(x);
+
     }, 500);
   };
+
   return (
     <div>
       <div className="container">
         <InfiniteScroll
-          dataLength={state.items.length}
+          dataLength={items.length}
+          // pullDownToRefreshThreshold={50}
           next={fetchMoreData}
           hasMore={true}
           loader={<h4>Loading...</h4>}
         >
-          {state.items.map((i, index) => (
+          {items.map((i, index) => (
             <div style={style} key={index}>
               div - #{index}
             </div>

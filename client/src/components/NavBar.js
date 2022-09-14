@@ -3,8 +3,11 @@ import '../styles/NavBar.css'
 import PersonIcon from '@mui/icons-material/Person';
 import ForumIcon from '@mui/icons-material/Forum';
 import IconButton from '@mui/material/IconButton';
+import axios from '../functions/axios'
 
 function NavBar() {
+  axios.get('/test');
+  
   return (
     <div>
       <nav class="navbar navbar-light bg-light d-flex justify-content-between underline fixed-height">
