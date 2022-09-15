@@ -2,7 +2,6 @@ import './App.css';
 import Navbar from './components/NavBar';
 import Scroll from './components/Scroll';
 import { useState, useEffect } from 'react';
-import { getTest } from './functions/test';
 import Login from './components/Login';
 import Signup from './components/Signup';
 
@@ -12,6 +11,7 @@ function App() {
       {/* <Navbar/> */}
       {/* <Login/> */}
       <Signup/>
+      
       {/* <Scroll/> */}
     </div>
   );

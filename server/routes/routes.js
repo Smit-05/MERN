@@ -3,10 +3,14 @@ const router = express.Router();
 
 
 // import controllers
-const {getTest} = require('../controllers/test');
+const Test = require('../controllers/UserController');
+
 // import middlewares
 
+
 // api routes
-router.get('/test', getTest)
+router.get('/user', Test.gt);
+router.post('/user', Test.pt);
+
 
 module.exports = router;

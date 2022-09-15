@@ -8,6 +8,7 @@ require('dotenv').config();
 
 // app
 const app = express();
+app.use(express.json())
 
 // db
 mongoose
@@ -23,8 +24,8 @@ app.use(morgan("dev"));
 app.use(cors({ origin: true, credentials: true }));
 
 // routes
-const testRoutes = require('./routes/test');
-app.use("/",testRoutes);
+const Routes = require('./routes/routes');
+app.use("/", Routes);
 
 // port
 const port = process.env.PORT || 8080;
